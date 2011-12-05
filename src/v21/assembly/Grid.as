@@ -206,7 +206,7 @@ package v21.assembly
 					smaller = prev2;
 				
 				tiles[smaller].drawSelectedBorder();
-				cursorPos = wrapIndex(smaller - 1);//so that when we next increment, we actually execute the jump location's possible commands
+				cursorPos = wrapIndex(smaller - 1); //so that when we next increment, we actually execute the jump location's possible commands
 				trace("JMPLESS" + smaller);
 				cursorTimer.reset();
 				cursorTimer.start();
